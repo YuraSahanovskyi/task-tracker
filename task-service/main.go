@@ -99,6 +99,7 @@ func updateTask(w http.ResponseWriter, r *http.Request) {
 		log.Println("Error encoding JSON:", err)
 	}
 }
+
 func deleteTask(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	id := r.PathValue("id")
